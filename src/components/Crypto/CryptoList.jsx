@@ -14,6 +14,7 @@ const CryptoList = () => {
     },[])
    if(!cryptoList) return <h1>Cargando...</h1>
    return (
+      <ol>
       <div className="crypto-list">
          {cryptoList.map(({id,name,priceUsd,symbol}) => (
             <Crypto
@@ -24,6 +25,7 @@ const CryptoList = () => {
             />
          ))}
       </div>
+      </ol>
    )
 }
 
